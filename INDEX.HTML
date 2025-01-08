@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site officiel de Jef Le Cri : musique et poésie ">
     <title>Jeff - Poésie et Musique</title>
 
     <!-- Bootstrap CSS    tu me recopie le cosde tezl qulle en etier sauf indication contraire -->
@@ -35,6 +36,14 @@
             font-size: 1.2rem;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
+        
+        p {
+            margin-top:0.5 rem;
+        margin-bottom: 1.5 rem; /* Ajustez la valeur selon vos préférences */
+
+    }
+
+
 
         .carousel img {
             height: 400px;
@@ -90,41 +99,47 @@
             <h2 class="main-title mb-4">Jef le Cri  ?</h2>
            
                 
-                <pre style="white-space: pre-wrap; word-wrap: break-word;">
-            Dans l’intimité des rues et des petites scènes, Jef Lecri façonne un univers singulier où musique et poésie s’entrelacent. Inspiré par Brassens, Brel, Les Ogres de Barback et marqué par l’héritage poétique de Rimbaud aux surréalistes, il mêle mélodie et révolte avec un souffle punk doux mais affirmé.
-            
+                <div style="white-space: pre-wrap; word-wrap: break-word;">
+      <p>
+        Dans l’intimité des rues et des petites scènes, Jef Lecri façonne un univers singulier où musique et poésie s’entrelacent.
+      
+      
+        Inspiré par Brassens, Brel, Les Ogres de Barback et marqué par l’héritage poétique de Rimbaud aux surréalistes, il mêle mélodie et révolte avec un souffle punk doux mais affirmé.
+      
+         
             Membre des groupes Zangra, Elfe et Mer, Cuverville (avec David gentilini), il sème des histoires vibrantes dans ses compositions. Artiste indépendant en quête du statut d’intermittent, il a vu ses chansons reprises par Le Cri du Peuple et collabore avec la poète Sylvie Escartin pour créer des ambiances musicales uniques.
+         
             
+            
+           
             Jef Le Cri, c’est un mélange d’intensité et d’authenticité, une signature rare qui laisse une empreinte durable.
-                </pre>
+           </p>
+                </div>
            
             
         </section>
 
         <!-- Section Musique -->
         <section id="musique" class="mt-5">
-            <h2 class="main-title mb-4">Musiqu</h2>
-            <div class="mb-3">
-                <h5>Les enfants de la creuse </h5>
-                <audio controls class="w-100">
-                    <source src="music/les enfants de la Creuse.mp3" type="audio/mpeg">
-                    Votre navigateur ne supporte pas la lecture audio.
-                </audio>
-                <h5>Le scaphandrier </h5>
-                <audio controls class="w-100">
-                    <source src="music/le scaphandrier mastering ville défigurée - 10_10_2023 14.41.mp3" type="audio/mpeg">
-                    Votre navigateur ne supporte pas la lecture audio.
-                </audio>
-                <h5>initiales</h5>
-                <audio controls class="w-100">
-                    <source src="music/initiales.mp3" type="audio/mpeg">
-                    Votre navigateur ne supporte pas la lecture audio.
-                </audio>
-                <h5>le banjo</h5>
-                <audio controls class="w-100">
-                    <source src="music/le banjo mastering ville défigurée - 10_10_2023 14.14.mp3" type="audio/mpeg">
-                    Votre navigateur ne supporte pas la lecture audio.
-                </audio>
+            <h2 class="main-title mb-4">Musique</h2>
+            <div class="music-player" style="max-width: 400px; margin: auto; background: #333; color: #fff; padding: 20px; border-radius: 8px; font-family: Arial, sans-serif;">
+                <!-- Écran du lecteur avec effet défilement -->
+                <div id="player-screen" style="background: #000; padding: 10px; text-align: center; font-size: 1rem; border: 2px solid #555; margin-bottom: 10px; white-space: nowrap; overflow: hidden;">
+                    <span id="track-title" style="display: inline-block; animation: scroll 10s linear infinite;">Les enfants de la creuse</span>
+                </div>
+        
+                <!-- Contrôles -->
+                <div class="controls" style="display: flex; justify-content: space-between; align-items: center;">
+                    <button id="prev-btn" class="control-btn">⏮️</button>
+                    <button id="play-pause-btn" class="control-btn">▶️</button>
+                    <button id="next-btn" class="control-btn">⏭️</button>
+                </div>
+        
+                <!-- Contrôles de volume -->
+                <div class="volume" style="margin-top: 10px; display: flex; justify-content: space-between;">
+                    <button id="volume-down" class="volume-btn">-</button>
+                    <button id="volume-up" class="volume-btn">+</button>
+                </div>
             </div>
         </section>
 
@@ -133,6 +148,7 @@
             <h2 class="main-title mb-4">Événements</h2>
             <ul>
                 <li><strong>Concert :</strong> 29 novembre 2024, Bordeaux le petit grain avec Cuverville</li>
+                <li><strong>Concert :</strong> 11 janvier 2025, Cercle de Préchac avec Cuverville</li>
             </ul>
         </section>
 
@@ -169,6 +185,9 @@
                     <div class="carousel-item">
                         <img src="picture/jef-10.jpg" class="d-block w-100" alt="...">
                     </div>
+                    <div class="carousel-item">
+                        <img src="picture/jef-11.jpg" class="d-block w-100" alt="...">
+                    </div>
                    
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -189,6 +208,173 @@
 
     <!-- Bootstrap Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        /* Animation pour le titre */
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    
+        /* Boutons de contrôle */
+        .control-btn {
+            background-color: transparent;
+            border: 2px solid #007bff;
+            color: #fff;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+    
+        .control-btn:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+    
+        .control-btn:focus {
+            outline: none;
+        }
+    
+        /* Apparence de la barre de volume */
+        #volume-slider::-webkit-slider-thumb {
+            background: #007bff;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+    
+        #volume-slider::-webkit-slider-runnable-track {
+            background: #555;
+            height: 6px;
+            border-radius: 4px;
+        }
+    
+        #volume-slider:focus {
+            outline: none;
+        }
+    </style>
+    
+    <style>
+        /* Animation pour le titre */
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    
+        /* Boutons de contrôle (Lecture, Précédent, Suivant) */
+        .control-btn {
+            background-color: #fff;
+            border: none;
+            color: #333;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 1.5rem;
+            transition: none;  /* Aucun effet de survol */
+        }
+    
+        .control-btn:focus {
+            outline: none;
+        }
+    
+        /* Boutons de volume (+ et -) */
+        .volume-btn {
+            background-color: #fff;
+            border: none;
+            color: #333;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: none;  /* Aucun effet de survol */
+        }
+    
+        .volume-btn:focus {
+            outline: none;
+        }
+    </style>
+    
+    <script>
+        // Liste des musiques
+        const tracks = [
+            { title: "Les enfants de la creuse", src: "music/les enfants de la Creuse.mp3" },
+            { title: "Le scaphandrier", src: "music/le scaphandrier mastering ville défigurée - 10_10_2023 14.41.mp3" },
+            { title: "Initiales", src: "music/initiales.mp3" },
+            { title: "Le banjo", src: "music/le banjo mastering ville défigurée - 10_10_2023 14.14.mp3" },
+        ];
+    
+        let currentTrack = 0;
+        const audio = new Audio(tracks[currentTrack].src);
+    
+        // Contrôles DOM
+        const trackTitle = document.getElementById("track-title");
+        const playPauseBtn = document.getElementById("play-pause-btn");
+        const prevBtn = document.getElementById("prev-btn");
+        const nextBtn = document.getElementById("next-btn");
+        const volumeDown = document.getElementById("volume-down");
+        const volumeUp = document.getElementById("volume-up");
+    
+        // Met à jour l'écran
+        function updateScreen() {
+            trackTitle.textContent = tracks[currentTrack].title;
+            // Applique l'animation de défilement du titre
+            trackTitle.style.animation = "none";
+            setTimeout(() => {
+                trackTitle.style.animation = "scroll 10s linear infinite";
+            }, 50);
+        }
+    
+        // Lecture/Pause
+        playPauseBtn.addEventListener("click", () => {
+            if (audio.paused) {
+                audio.play();
+                playPauseBtn.textContent = "⏸️";
+            } else {
+                audio.pause();
+                playPauseBtn.textContent = "▶️";
+            }
+        });
+    
+        // Suivant
+        nextBtn.addEventListener("click", () => {
+            currentTrack = (currentTrack + 1) % tracks.length;
+            audio.src = tracks[currentTrack].src;
+            updateScreen();
+            audio.play();
+            playPauseBtn.textContent = "⏸️";
+        });
+    
+        // Précédent
+        prevBtn.addEventListener("click", () => {
+            currentTrack = (currentTrack - 1 + tracks.length) % tracks.length;
+            audio.src = tracks[currentTrack].src;
+            updateScreen();
+            audio.play();
+            playPauseBtn.textContent = "⏸️";
+        });
+    
+        // Contrôles de volume
+        volumeDown.addEventListener("click", () => {
+            if (audio.volume > 0) audio.volume -= 0.1;
+        });
+    
+        volumeUp.addEventListener("click", () => {
+            if (audio.volume < 1) audio.volume += 0.1;
+        });
+    
+        // Initialisation
+        updateScreen();
+    </script>
+   
 </body>
 
 </html>
