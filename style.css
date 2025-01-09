@@ -1,83 +1,161 @@
-/* Corps de la page */
 body {
     font-family: 'Roboto', sans-serif;
-    color: #333;
-    background-color: #f8f9fa;
-    margin: 0;  /* Suppression des marges par défaut du body */
-    padding: 0; /* Ajout de padding pour éviter les bords collés */
 }
 
-/* Titres */
-h1, h2, h5 {
+header.banner {
+    background: url('picture/jef-6.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header.banner h1 {
     font-family: 'Playfair Display', serif;
-    color: #444;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-/* Header */
-header {
-    background-color: #e3f2fd;
-    border-bottom: 1px solid #ddd;
-}
-
-/* Cartes de contenu */
-.card-title {
+header.banner p {
     font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    margin-top:0.5 rem;
+margin-bottom: 1.5 rem; /* Ajustez la valeur selon vos préférences */
+
+}
+
+
+
+.carousel img {
+    height: 400px;
+    object-fit: cover;
+}
+
+footer {
+    background: #f8f9fa;
+}
+
+.main-title {
+    color: #555;
     font-weight: bold;
 }
 
-/* Formatage du code pré-formaté */
-pre {
-    font-family: 'Roboto Mono', monospace;
-    white-space: pre-wrap;
-    word-wrap: break-word;
+@media (max-width: 768px) {
+    .carousel img {
+        height: 250px;
+    }
+}
+
+ /* Animation pour le titre */
+ @keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Boutons de contrôle */
+.control-btn {
+    background-color: transparent;
+    border: 2px solid #007bff;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.control-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.control-btn:focus {
+    outline: none;
+}
+
+/* Apparence de la barre de volume */
+#volume-slider::-webkit-slider-thumb {
+    background: #007bff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+#volume-slider::-webkit-slider-runnable-track {
+    background: #555;
+    height: 6px;
+    border-radius: 4px;
+}
+
+#volume-slider:focus {
+    outline: none;
+}
+
+/* Animation pour le titre */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Boutons de contrôle (Lecture, Précédent, Suivant) */
+.control-btn {
     background-color: #fff;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-/* Bandeau en tête avec image */
-.banner {
-    background-image: url('picture/IMG_20240912_124644.jpg'); /* Remplacez par le chemin de votre image */
-    background-size: cover; /* Couvre toute la zone */
-    background-position: center center; /* Position par défaut de l'image (centrée) */
-    color: white;
-    text-align: center;
-    padding: 100px 0; /* Hauteur du bandeau */
-    position: relative; /* Pour le bon positionnement du contenu */
-}
-
-/* Texte dans le bandeau */
-.banner-text h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 4rem; /* Taille du titre */
-    font-weight: 700;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); /* Ombre pour la lisibilité */
-}
-
-.banner-text p {
-    font-family: 'Roboto', sans-serif;
+    border: none;
+    color: #333;
+    padding: 10px;
+    cursor: pointer;
     font-size: 1.5rem;
-    font-weight: 400;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Ombre pour la lisibilité */
+    transition: none;  /* Aucun effet de survol */
 }
 
-/* Ajustements pour le bandeau en version bureau */
-@media (min-width: 992px) {
-    .banner {
-        background-position: center 20%; /* Déplacer l'image pour mieux voir la tête */
+.control-btn:focus {
+    outline: none;
+}
+
+/* Boutons de volume (+ et -) */
+.volume-btn {
+    background-color: #fff;
+    border: none;
+    color: #333;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: none;  /* Aucun effet de survol */
+}
+
+.volume-btn:focus {
+    outline: none;
+}
+.carousel img {
+height: auto; /* Permet à l'image de conserver son ratio */
+max-height: 500px; /* Limite la hauteur maximale sur grand écran */
+object-fit: cover; /* Assure un affichage agréable sans étirement */
+}
+
+/* Animation des paroles */
+@keyframes scroll-lyrics {
+    0% {
+        transform: translateX(100%); /* Commence à droite */
+    }
+    100% {
+        transform: translateX(-100%); /* Finit à gauche */
     }
 }
 
-/* Ajustements pour le bandeau en version mobile */
-@media (max-width: 991px) {
-    .banner {
-        background-position: center center; /* Garder le centrage pour les petits écrans */
-    }
-}
-
-/* Assurez-vous que le contenu ne soit pas collé aux bords */
-body {
-    margin-top: 0;
-    padding: 0;
+#lyrics-text {
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    animation: scroll-lyrics 30s linear infinite; /* Animation à durée de 15 secondes */
 }

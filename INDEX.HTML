@@ -12,59 +12,9 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-
+ <link rel="stylesheet" href="style.css">
     <!-- Custom CSS -->
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-        }
-
-        header.banner {
-            background: url('picture/jef-6.jpg') no-repeat center center/cover;
-            color: #fff;
-            text-align: center;
-            padding: 60px 20px;
-        }
-
-        header.banner h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-        }
-
-        header.banner p {
-            font-size: 1.2rem;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-        }
-        
-        p {
-            margin-top:0.5 rem;
-        margin-bottom: 1.5 rem; /* Ajustez la valeur selon vos préférences */
-
-    }
-
-
-
-        .carousel img {
-            height: 400px;
-            object-fit: cover;
-        }
-
-        footer {
-            background: #f8f9fa;
-        }
-
-        .main-title {
-            color: #555;
-            font-weight: bold;
-        }
-
-        @media (max-width: 768px) {
-            .carousel img {
-                height: 250px;
-            }
-        }
-    </style>
+    
 </head>
 
 <body>
@@ -119,6 +69,8 @@
                 <div id="player-screen" style="background: #000; padding: 10px; text-align: center; font-size: 1rem; border: 2px solid #555; margin-bottom: 10px; white-space: nowrap; overflow: hidden;">
                     <span id="track-title" style="display: inline-block; animation: scroll 10s linear infinite;">Les enfants de la creuse</span>
                 </div>
+
+                
         
                 <!-- Contrôles -->
                 <div class="controls" style="display: flex; justify-content: space-between; align-items: center;">
@@ -132,6 +84,11 @@
                     <button id="volume-down" class="volume-btn">-</button>
                     <button id="volume-up" class="volume-btn">+</button>
                 </div>
+<!-- Paroles de la chanson -->
+<div id="lyrics" class="lyrics mt-4" style="font-size: 1.1rem; color: #fff; white-space: nowrap; overflow: hidden;">
+    <span id="lyrics-text" style="display: inline-block;">Les paroles de la chanson seront affichées ici...</span>
+</div>
+
             </div>
         </section>
 
@@ -203,183 +160,10 @@
 
     <!-- Bootstrap Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <style>
-        /* Animation pour le titre */
-        @keyframes scroll {
-            0% {
-                transform: translateX(100%);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
+ <script src="script.js"></script>
     
-        /* Boutons de contrôle */
-        .control-btn {
-            background-color: transparent;
-            border: 2px solid #007bff;
-            color: #fff;
-            padding: 10px;
-            cursor: pointer;
-            border-radius: 50%;
-            font-size: 1.2rem;
-            transition: all 0.3s ease;
-        }
     
-        .control-btn:hover {
-            background-color: #007bff;
-            color: #fff;
-        }
-    
-        .control-btn:focus {
-            outline: none;
-        }
-    
-        /* Apparence de la barre de volume */
-        #volume-slider::-webkit-slider-thumb {
-            background: #007bff;
-            border-radius: 50%;
-            width: 20px;
-            height: 20px;
-            cursor: pointer;
-        }
-    
-        #volume-slider::-webkit-slider-runnable-track {
-            background: #555;
-            height: 6px;
-            border-radius: 4px;
-        }
-    
-        #volume-slider:focus {
-            outline: none;
-        }
-    </style>
-    
-    <style>
-        /* Animation pour le titre */
-        @keyframes scroll {
-            0% {
-                transform: translateX(100%);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-    
-        /* Boutons de contrôle (Lecture, Précédent, Suivant) */
-        .control-btn {
-            background-color: #fff;
-            border: none;
-            color: #333;
-            padding: 10px;
-            cursor: pointer;
-            font-size: 1.5rem;
-            transition: none;  /* Aucun effet de survol */
-        }
-    
-        .control-btn:focus {
-            outline: none;
-        }
-    
-        /* Boutons de volume (+ et -) */
-        .volume-btn {
-            background-color: #fff;
-            border: none;
-            color: #333;
-            padding: 10px;
-            cursor: pointer;
-            font-size: 1.2rem;
-            transition: none;  /* Aucun effet de survol */
-        }
-    
-        .volume-btn:focus {
-            outline: none;
-        }
-        .carousel img {
-        height: auto; /* Permet à l'image de conserver son ratio */
-        max-height: 500px; /* Limite la hauteur maximale sur grand écran */
-        object-fit: cover; /* Assure un affichage agréable sans étirement */
-    }
-
-    </style>
-    
-    <script>
-        // Liste des musiques
-        const tracks = [
-        { title: "Billie H", src: "music/Billie H masterisé (online-audio-converter.com).mp3" },
-        { title: "A Toulon", src: "music/A Toulon master (online-audio-converter.com).mp3" },
-        { title: "Le banjo", src: "music/le banjo mastering ville défigurée - 10_10_2023 14.14.mp3" },
-            { title: "Rivière", src: "music/riviere.mp3" },
-            { title: "Le scaphandrier", src: "music/le scaphandrier mastering ville défigurée - 10_10_2023 14.41.mp3" },
-            { title: "Initiales textes Sylvie Escartin", src: "music/initiales.mp3" },
-           
-            
-           
-        ];
-    
-        let currentTrack = 0;
-        const audio = new Audio(tracks[currentTrack].src);
-    
-        // Contrôles DOM
-        const trackTitle = document.getElementById("track-title");
-        const playPauseBtn = document.getElementById("play-pause-btn");
-        const prevBtn = document.getElementById("prev-btn");
-        const nextBtn = document.getElementById("next-btn");
-        const volumeDown = document.getElementById("volume-down");
-        const volumeUp = document.getElementById("volume-up");
-    
-        // Met à jour l'écran
-        function updateScreen() {
-            trackTitle.textContent = tracks[currentTrack].title;
-            // Applique l'animation de défilement du titre
-            trackTitle.style.animation = "none";
-            setTimeout(() => {
-                trackTitle.style.animation = "scroll 10s linear infinite";
-            }, 50);
-        }
-    
-        // Lecture/Pause
-        playPauseBtn.addEventListener("click", () => {
-            if (audio.paused) {
-                audio.play();
-                playPauseBtn.textContent = "⏸️";
-            } else {
-                audio.pause();
-                playPauseBtn.textContent = "▶️";
-            }
-        });
-    
-        // Suivant
-        nextBtn.addEventListener("click", () => {
-            currentTrack = (currentTrack + 1) % tracks.length;
-            audio.src = tracks[currentTrack].src;
-            updateScreen();
-            audio.play();
-            playPauseBtn.textContent = "⏸️";
-        });
-    
-        // Précédent
-        prevBtn.addEventListener("click", () => {
-            currentTrack = (currentTrack - 1 + tracks.length) % tracks.length;
-            audio.src = tracks[currentTrack].src;
-            updateScreen();
-            audio.play();
-            playPauseBtn.textContent = "⏸️";
-        });
-    
-        // Contrôles de volume
-        volumeDown.addEventListener("click", () => {
-            if (audio.volume > 0) audio.volume -= 0.1;
-        });
-    
-        volumeUp.addEventListener("click", () => {
-            if (audio.volume < 1) audio.volume += 0.1;
-        });
-    
-        // Initialisation
-        updateScreen();
-    </script>
+   
    
 </body>
 
