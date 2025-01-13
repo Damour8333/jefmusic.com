@@ -116,7 +116,9 @@ Un corps à corps
 ---` },
     { title: "Rivière", src: "music/riviere.mp3", lyrics: `Rivière éternelle...` },
     { title: "Le scaphandrier", src: "music/le scaphandrier mastering ville défigurée - 10_10_2023 14.41.mp3" },
-    { title: "Initiales textes Sylvie Escartin", src: "music/initiales.mp3" },
+    { title: "Les aubépines  ", src: "music/les aubépines mastering 2025 - 13_01_2025 17.40.mp3" },
+    { title: "Les éffarés  Rimbaud /Jef Le Cri", src: "music/les éffarés mastering 2025 - 13_01_2025 17.35.mp3" },
+    { title: "Partir ", src: "music/Partir.mp3" },
 ];
 
 let currentTrack = 0;
