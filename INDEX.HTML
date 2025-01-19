@@ -82,35 +82,22 @@
         </section>
 
         <!-- Section Musique -->
-        <section id="musique" class="mt-5">
-            <h2 class="main-title mb-4">Musique</h2>
-            <div class="music-player" style="max-width: 400px; margin: auto; background: #333; color: #fff; padding: 20px; border-radius: 8px; font-family: Arial, sans-serif;">
-                <!-- Écran du lecteur avec effet défilement -->
-                <div id="player-screen" style="background: #000; padding: 10px; text-align: center; font-size: 1rem; border: 2px solid #555; margin-bottom: 10px; white-space: nowrap; overflow: hidden;">
-                    <span id="track-title" style="display: inline-block; animation: scroll 10s linear infinite;">Les enfants de la creuse</span>
-                </div>
-
-                
-        
-                <!-- Contrôles -->
-                <div class="controls" style="display: flex; justify-content: space-between; align-items: center;">
-                    <button id="prev-btn" class="control-btn">⏮️</button>
-                    <button id="play-pause-btn" class="control-btn">▶️</button>
-                    <button id="next-btn" class="control-btn">⏭️</button>
-                </div>
-        
-                <!-- Contrôles de volume -->
-                <div class="volume" style="margin-top: 10px; display: flex; justify-content: space-between;">
-                    <button id="volume-down" class="volume-btn">-</button>
-                    <button id="volume-up" class="volume-btn">+</button>
-                </div>
-<!-- Paroles de la chanson -->
-<div id="lyrics" class="lyrics mt-4" style="font-size: 1.1rem; color: #fff; white-space: nowrap; overflow: hidden;">
-    <span id="lyrics-text" style="display: inline-block;">Les paroles de la chanson seront affichées ici...</span>
-</div>
-
+        <div class="player-container">
+            <h2>Music Player</h2>
+    
+            <!-- Liste des titres -->
+            <div id="track-list"></div>
+    
+            <!-- Paroles -->
+            <div id="lyrics" class="lyrics">Sélectionnez une chanson pour afficher les paroles...</div>
+    
+            <!-- Contrôles -->
+            <div class="controls">
+                <button id="prev-btn">⏮️</button>
+                <button id="play-pause-btn">▶️</button>
+                <button id="next-btn">⏭️</button>
             </div>
-        </section>
+        </div>
 
         <!-- Section Événements -->
         <section id="evenements" class="mt-5">
