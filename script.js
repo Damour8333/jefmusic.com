@@ -188,6 +188,7 @@ Fier et naturel
 Souillé comme une poubelle
 Traité comme une chienne
 survivante` },
+
     { title: "Le scaphandrier", src: "music/le scaphandrier mastering ville défigurée - 10_10_2023 14.41.mp3",lyrics :`
         Le scaphandrier
 
@@ -264,7 +265,7 @@ Dans ma caboche  et sur cette scène
         Les aubépines
 Sous les plis de ton jean,
  Les sourires de ta mine,
- Les caresses de mes rires
+ Les caresses de mes rimes
  Et ton rire qui s'anime.
 
 Sur les plis de ta vie,
