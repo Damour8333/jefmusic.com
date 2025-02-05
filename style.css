@@ -1,16 +1,17 @@
-
+/* Styles globaux */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
     color: #333;
-    
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     min-height: 100vh;
 }
 
+/* Player container */
 .player-container {
     width: 90%;
     max-width: 600px;
@@ -20,6 +21,7 @@ body {
     padding: 20px;
 }
 
+/* Liste des pistes */
 .track {
     padding: 10px;
     border-bottom: 1px solid #ddd;
@@ -39,6 +41,7 @@ body {
     color: #fff;
 }
 
+/* Paroles */
 .lyrics {
     margin-top: 20px;
     font-size: 1rem;
@@ -46,6 +49,7 @@ body {
     color: #555;
 }
 
+/* Contrôles du player */
 .controls {
     display: flex;
     justify-content: center;
@@ -67,10 +71,8 @@ body {
 .controls button:hover {
     background: #555;
 }
-body {
-    font-family: 'Roboto', sans-serif;
-}
 
+/* Bannière */
 header.banner {
     background: url('picture/jef-6.jpg') no-repeat center center/cover;
     color: #fff;
@@ -89,50 +91,33 @@ header.banner p {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
+/* Paragraphes */
 p {
-    margin-top:0.5 rem;
-margin-bottom: 1.5 rem; /* Ajustez la valeur selon vos préférences */
-
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
-
-
+/* Carousel */
 .carousel img {
-    height: 400px;
-    object-fit: cover;
+    height: auto; /* Conserve le ratio */
+    max-height: 500px; /* Limite la hauteur */
+    object-fit: cover; /* Ajuste sans déformation */
 }
 
+/* Footer */
 footer {
     background: #f8f9fa;
 }
 
+/* Titres */
 .main-title {
     color: #555;
     font-weight: bold;
 }
 
-
-
-
-
+/* Media Query */
 @media (max-width: 768px) {
     .carousel img {
         height: 250px;
     }
 }
-
-
-
- 
-
-
-
-
-.carousel img {
-height: auto; /* Permet à l'image de conserver son ratio */
-max-height: 500px; /* Limite la hauteur maximale sur grand écran */
-object-fit: cover; /* Assure un affichage agréable sans étirement */
-}
-
-
-
