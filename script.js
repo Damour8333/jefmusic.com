@@ -145,121 +145,8 @@ il joue en accords
 Un corps a corps
 
 JF DAMOUR/DAMOUR` },
-    { title: "Rivière", src: "music/riviere.mp3", lyrics: `Riviére
-Paroles et musique JF Damour
-
-Rivière éternelle
-Au désir charnelle
-tu coule lentement
-plus sereinement
-Ton lit est défait
-les ports inondés
-Le canal est bouché
-la rivière est monté
-Est l'onde remue ses méandres
-La crue s'est mue en une offrande
-
-Rivière éternelle
-ou s'arréte le ciel
-La houle fulminant
-renverse fiérement
-les grues sur les quais
-tombe sur les pavés
-L'eau a submergé
-La ville défigurée
-les Pierre ricoche sur l'ombre
-envasé dans l'alluvion sombre
-
-Rivière éternelle
-attend le dégel
-l'éclat d'un fragment
-le feu d'un instant
-le cap vers la tranchée
-La forêt incendié
-Les bateaux vont coulés
-Les troncs d'arbres sont coupés
-Et flotte comme des bouchons vides
-Sur la riviére pleine de rides
-
-Riviére éternelle
-en forme de dentelle
-Le long des gratte ciel
-Fier et naturel
-Souillé comme une poubelle
-Traité comme une chienne
-survivante` },
-    { title: "Le scaphandrier", src: "music/le scaphandrier mastering ville défigurée - 10_10_2023 14.41.mp3",lyrics :`
-        Le scaphandrier
-
-Il descends  au fond de l'océan
-Dans l'espoir de trouver  un trésor 
-Des camés des dépaysements
-Des silence pour un amour d'or
-
-Qu'une fadaise n'avait pu convaincre
-Sirènes au corps lisse  au long cils
-Du moins pour ces nuits indistincte
-D'espoir et de dépits inutiles
-
-Il reste sur  cet pensées qui le hante
-Des champs de coquelicots rubis
-Des plaines verte des lèvres violente
-Et des lubie en forme d’alibis
-
-Il  descend au fond de l'océan
-sentir la pénombre descendre
-sur le mémorial encastrant
-Dans l' alluvion  des jour clément
-
-En face de l'embrasure  enflammé
-Un vestige large dissonant
-Qui l’obsède  jusqu'à  la satiété
-Il se sent semblable a un volcan
-
-C'est tout son estomac qui souffre
-Dans l’abysse profond il s’abîme
-Pour ce voyage pour la Grande-Ourse
-Pour cette aphrodite  sous marine	
-
-De cet fièvre une envie l'envahit
-Du fond du bide il sent le courage 
-Il décame déclamant  un cri
-Une torpeur semblable a un brouillage
-
-L’apprêté   de son scaphandre 
-La touche  velouté  de ce gouffre
-Danse de même qu'une sarabande 
-Lorsque ses amandes s'entrouvrent
-
-C'est une fanfare qui se faufile
-sous ses  récifs  perdrix de mer
- Il ne trouve que de la pacotille 
-Buste de bakélite  de bruyére
-
-Pendant son labeur il se tord
-Le dos de douleur qui empire 
-Il a la fièvre pour la Toison d'or
-ça l’anéantit  il la désire
-
-La chanson du scaphandrier
-Je l'ai écrit pour cet inconnu
-De Lombardie ou  de  Calabre 
- curant ma darse de ces obus
-
-Pour les licenciés des Chantiers 
-de La  ciotat  et  la  de  Seyne 00    
-Vos navires  sont partie  navigué
-Dans ma caboche  et sur cette scène
-
-
-
-
-
-
-
-
-
-`},
+ 
+ 
     { title: "Les aubépines", src: "music/les aubépines mastering 2025 - 13_01_2025 17.40.mp3",lyrics: `
         Les aubépines
 Sous les plis de ton jean,
@@ -295,8 +182,90 @@ Sur le pli de tes yeux
  
 
 `},
-    { title: "Les éffarés Rimbaud /Jef Le Cri", src: "music/les éffarés mastering 2025 - 13_01_2025 17.35.mp3" },
-    { title: "Partir", src: "music/Partir.mp3" }
+    { title: "Le murier", src: "music/le murier.mp3",lyrics:`
+       Le murier par jef le Cri 
+Sous le mûrier   mes pensées murissent   10
+ Comme une veille pomme sur  un  mur 
+le soleil creuse des rides   cubiste 
+Sur mon visage triste et  mature
+ Autour les arbustes apportent un vent frais 
+Et robuste 
+Devant mes yeux le temps réapparaît 
+Dans l'azur 
+Sous la verdure  ma fêlure perdure 
+Les blessures les murmure  me torture 
+C'est comme si chaque injustice 
+C'éatit fixé dans ces interstices 
+Au devant De ce vieux murier 
+sauvage 
+sans age 
+Devant moi dressé depuis  mon
+ jeune age 
+Royal
+ Sous le tempo des oisillons 
+tombé du nid dans le gazon 
+Je retiens ma leçon 
+je la chante en chanson 
+Sentir le vent le bras du murier 
+S'articuler et serrer mes pensées 
+Le vent chante dans les branches 
+Je mesure les battements de ces hanches 
+Cher Mûrier tu sais que tu ma aidé
+ A supporter 
+Le poids de ces journée a travailler 
+Bétonner
+A imprimer ` },
+    { title: "Partir ", src: "music/Partir.mp3",lyrics:`` },
+    { title: " Travées blues en Drop D ", src: "music/traveés blues en drop D. master .mp3",lyrics: `
+        Travées blues en drop D par Jef Le cri  
+Une chaussure trouée, des habits dépareillés, 
+Mes pensées allaient au hasard des travées. 
+Les façades éclairaient les lames du tramway, 
+J’allais seul dans les allées, les mains serrées. 
+Souvenir d’un baiser sur mes lèvres brûlées, 
+Enivré de bière et de rêves brisés, 
+J’comète fatigué sur un fil d’acier, 
+Pleurant des larmes gercées sur le pavé crevé. 
+Mes yeux lampadaires, mes yeux sans lumière, 
+Mes genoux avaient le goût de cette terre 
+Que tant de fois j’avais aimée et labourée 
+Avec l’amour d’un fils, moi qui étais le dernier. 
+Peu importe où le vent me menait, me portait, 
+Je rêvais sans but, sans issue, sans aimer, 
+Ne serait-ce qu’un éclat, l’émotion d’un instant, 
+Les rues étaient des sentiers où je passais le temps. 
+Les habits déchirés, la barbe mal rasée, 
+J’étais le seigneur des civettes et des troquets, 
+Poète, chanteur, écrivain en souvenir de ta peine, 
+Au brouillard, à la pluie, au soleil, à la neige. 
+Tous les espoirs déçus, chemins inaccessibles, 
+Le destin, les barrières, rien n’était invisible. 
+Solitude d’un soir, je rêvais d’un amour fort, 
+Que l’éternité soit plus forte que la mort. 
+La pluie est passée dans mes chaussures usées, 
+C’était le prix à payer pour pouvoir exister. 
+Dans ce temps manquant, l’espace d’un moment, 
+Au regard des passants, avoir l'âme d’un mendiant. 
+En refus d’illusions, en recherche de passion, 
+J’ai cherché cette ivresse dans toutes les tensions, 
+Mais cette minute a fui pour toujours dans la nuit, 
+Me laissant le réel, ma gamelle et l’ennui. 
+J’ai visé, j’ai chiné toutes les réalités, 
+Mis des masques de bourgeois pour avoir l’air parfait. 
+Mais la farce était triste, les forces étaient blasées, 
+Une potion naturiste, un puriste abusé. 
+Les étoiles et la brume n’étaient même plus des voiles, 
+Je ne croyais en rien, y compris la bonne étoile. 
+J’ai fui tous les livres, les bonnes filles et les amis, 
+Pour revivre cet instant, pour revivre cette magie. 
+Si je vendais mon âme à un poulet ou au diable, 
+Si je remontais le temps sur un bateau gonflable, 
+Si je pouvais refaire le chemin en arrière, 
+Choisirais-je l’enfer ou revoir mon père ? 
+J’ai bu toutes les potions, j’ai bu toutes les factions, 
+J’ai accosté des princes, parlé à des barons. 
+Peu importe l’existence, on avance en roue libre, 
+Vivre dans le présent, c’est sûrement vivre libre.`}
 ];
 
 let currentTrack = 0;
