@@ -71,25 +71,13 @@ body {
 .controls button:hover {
     background: #555;
 }
+.navbar {
+    width: 100%;
+}
+
 
 /* Bannière */
-header.banner {
-    background: url('picture/jef-6.jpg') no-repeat center center/cover;
-    color: #fff;
-    text-align: center;
-    padding: 60px 20px;
-}
 
-header.banner h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-
-header.banner p {
-    font-size: 1.2rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
 
 /* Paragraphes */
 p {
@@ -107,7 +95,48 @@ p {
 /* Footer */
 footer {
     background: #f8f9fa;
+}/* Bannière */
+header.banner {
+    background: url('picture/jef-6.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    width: 100%;  /* Assure que le header prend toute la largeur */
+    min-height: 300px; /* Ajuste selon la hauteur souhaitée */
 }
+
+/* Assurez-vous que l'image de la bannière est responsive */
+@media (max-width: 768px) {
+    header.banner {
+        padding: 40px 20px; /* Réduit l'espace pour les petits écrans */
+        min-height: 200px; /* Réduit la hauteur de la bannière */
+    }
+
+    header.banner h1 {
+        font-size: 2.5rem; /* Réduit la taille du titre sur les petits écrans */
+    }
+
+    header.banner p {
+        font-size: 1rem; /* Réduit la taille du texte */
+    }
+}
+
+/* Améliorer la responsivité de la bannière pour les très petits écrans */
+@media (max-width: 576px) {
+    header.banner {
+        padding: 20px 10px; /* Réduit encore plus l'espace */
+        min-height: 150px; /* Ajuste la hauteur de la bannière */
+    }
+
+    header.banner h1 {
+        font-size: 2rem; /* Titre plus petit */
+    }
+
+    header.banner p {
+        font-size: 0.9rem; /* Texte plus petit */
+    }
+}
+
 
 /* Titres */
 .main-title {
